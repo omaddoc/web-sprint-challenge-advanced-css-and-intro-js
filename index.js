@@ -305,9 +305,24 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
+function addArtist(arr, id, name, years, genre, nationality, bio) {
   /*Your Code Here*/
+  arr.push(id, name, years, genre, nationality, bio);
+  return arr;
 }
+
+console.log(
+  "Task 6",
+  addArtist(
+    artists,
+    "20",
+    "Orlando Castillo",
+    "1991 - 2020",
+    "Web Design",
+    "Hispanic",
+    "Pizza ipsum dolor amet bbq sauce white pizza party banana peppers black olives string cheese. Bbq sauce stuffed crust hawaiian melted cheese bacon & tomato. White pizza thin crust melted cheese chicken and bacon. Bacon & tomato pie pizza Chicago style. Party melted cheese buffalo sauce, mozzarella chicken and bacon meatball broccoli"
+  )
+);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
